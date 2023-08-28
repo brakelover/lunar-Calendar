@@ -108,7 +108,7 @@ function load() {
             //Days in month in calendar
             dayBox.innerText = i - paddingDay;
             dayBox.style.backgroundColor = 'white';
-            if (i-paddingDay==date) {
+            if (i-paddingDay==date && nav===0 && navYear===0) {
                 dayBox.style.backgroundColor = "#cedbdd";
                 sunDate.innerText = dayBox.innerText;
             }

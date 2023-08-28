@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./calendar.ico">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">
+            <div class="nameTitle">
+                <h1><span>LỊCH VẠN NIÊN</span></h1>
+            </div>
+
+            <div class="showTitle">
+
+                <div id="sun">
+                    <h3>Dương lịch</h3>
+                    <div class="monthAndYearTitle" id="sunMonthYear"></div>
+                    <div class="dateTitle" id="sunDate"></div>
+                </div>
+    
+                <div id="lunar">
+                    <h3>Âm lịch</h3>
+                    <div class="monthAndYearTitle" id="moonMonthYear"></div>
+                    <div class="dateTitle" id="moonDate"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="searchBar">
+            <input id="searchBarInfo" type="date" />
+            <div id="warning">
+                <i class="fa-solid fa-arrow-up"></i>
+                <p>*Search/press the current date or you'll watch Chinese lunar calendar</p>
+            </div>
+        </div>
+
+        <div class="calendar">
+            <div id="header">
+                <div id="chevronYearBack">
+                    <i class="fa-solid fa-angle-double-left"></i>
+                </div>
+                <div id="chevronMonthBack">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div id="headerTitle"></div>
+                <div id="chevronMonthFoward">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div id="chevronYearForward">
+                    <i class="fa-solid fa-angle-double-right"></i>
+                </div>
+            </div>
+
+            <div id="weekdays">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+
+            <div id="theCalendar"></div>
+        </div>
+
+    </div>
+
+    <script src="./node_modules/lunar-javascript/lunar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

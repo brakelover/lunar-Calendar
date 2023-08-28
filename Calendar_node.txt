@@ -1,0 +1,37 @@
+video: 45:06
+https://youtu.be/m9OSBJaQTlM?si=PjTn0HNUQHMnV1BI
+
+Tính ngày tháng âm lịch:
+- Ngày đầu tiên của tháng âm lịch là ngày chứa điểm Sóc
+
+- Một năm bình thường có 12 tháng âm lịch, một năm nhuận có 13 tháng âm lịch
+
+- Đông chí luôn rơi vào tháng 11 âm lịch
+
+- Trong một năm nhuận, nếu có 1 tháng không có Trung khí thì tháng đó là tháng nhuận. Nếu nhiều tháng trong năm nhuận đều không có Trung khí  thì chỉ tháng đầu tiên sau Đông chí là tháng nhuận
+
+- Việc tính toán dựa trên kinh tuyến 105° đông.
+
+
+Sóc: Thời điểm mặt trời, mặt trăng và trái đất thẳng hàng.
+
+- Chu kỳ của điểm Sóc là khoảng 29,5 ngày. Ngày chứa điểm Sóc được gọi là ngày Sóc => bắt đầu tháng âm lịch.
+
+
+/**
+Not use part.
+
+// The day user clicked.
+let clicked = null;
+
+/**
+ * Array of event object. 
+ * localStorage.getItem(): save key/value pairs in the browser
+ * JSON.parse(): turn string of object into object.
+ * 
+ * Get event string from localStorage.getItem(), turn the event string
+ * into object by JSON.parse(), and finally event turn into array of event object. 
+ */
+let events = (localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []);
+*/
+

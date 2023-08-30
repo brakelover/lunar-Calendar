@@ -43,7 +43,6 @@ function load() {
     let lunarDate = lunarTime[0];
     let lunarMonth = lunarTime[1];
     let lunarYear = lunarTime[2];
-    console.log(lunarTime);
     
     moonMonthYear.innerText = `Tháng ${lunarMonth<10 ?'0'+(lunarMonth):lunarMonth} Năm ${lunarYear}`;
     moonDate.innerText = lunarDate;

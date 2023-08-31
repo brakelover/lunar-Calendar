@@ -18,11 +18,12 @@ const weekdays = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'];
 function load() {
     const dt = new Date();
     
-    
     if (nav !== 0) {
+		dt.setDate(1);
         dt.setMonth(new Date().getMonth() + nav);
     }
     if (navYear !== 0) {
+		dt.setDate(1);
         dt.setFullYear(new Date().getFullYear() + navYear);
     }
     
@@ -30,6 +31,7 @@ function load() {
     let month = dt.getMonth();
     let year = dt.getFullYear();
     
+	console.log(date, month, year);
     
     const sunMonthYear = document.getElementById('sunMonthYear');
     const sunDate = document.getElementById('sunDate');
@@ -37,7 +39,8 @@ function load() {
     const moonDate = document.getElementById('moonDate');
     
     sunMonthYear.innerText = `Tháng ${month+1<10 ?'0'+(month+1):month+1} Năm ${year}`;  
-    
+    sunDate.innerText = date;
+
     //Convert from solar calendar to lunar calendar.
     let lunarTime = convertSolar2Lunar(date, month+1, year, 7.0);
     let lunarDate = lunarTime[0];
@@ -108,7 +111,7 @@ function load() {
             //dayBox.style.backgroundColor = 'white';
             if (i-paddingDay==date && nav===0 && navYear===0) {
                 dayBox.style.backgroundColor = "#cedbdd";
-                sunDate.innerText = dayBox.innerText;
+                //sunDate.innerText = dayBox.innerText;
             }
         
             // ADD A FUNTION TAKE THE PARTICULAR DATE HERE
